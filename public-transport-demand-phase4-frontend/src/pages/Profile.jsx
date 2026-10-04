@@ -1,0 +1,3 @@
+import { useAuth } from "../context/AuthContext";
+export default function Profile(){const {user}=useAuth();return <><h1 className="text-3xl font-bold">Profile</h1><p className="mt-1 text-slate-500">Your account information.</p><div className="card mt-6 max-w-xl p-6 space-y-4"><Row l="Name" v={user?.name}/><Row l="Email" v={user?.email}/><Row l="Role" v={user?.role}/><Row l="User ID" v={user?.id}/><Row l="Created" v={user?.created_at}/></div></>}
+function Row({l,v}){return <div className="flex justify-between gap-5 border-b pb-3 last:border-0"><span className="text-slate-500">{l}</span><span className="font-medium">{v}</span></div>}

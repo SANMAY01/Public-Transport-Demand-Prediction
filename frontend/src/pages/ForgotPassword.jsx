@@ -1,0 +1,2 @@
+import { Link } from "react-router-dom";
+export default function ForgotPassword(){return <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4"><div className="card w-full max-w-md p-8"><h1 className="text-2xl font-bold">Forgot Password</h1><p className="mt-3 text-sm text-slate-500">Password reset email is not connected to the backend yet. For this local academic project, contact the administrator to reset the account.</p><Link className="mt-6 inline-block text-blue-600" to="/login">Back to Login</Link></div></div>}

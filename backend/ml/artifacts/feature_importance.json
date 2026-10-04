@@ -1,0 +1,19 @@
+{
+  "numeric__previous_demand": 0.996582,
+  "numeric__hour": 0.001454,
+  "categorical__route_Route 3": 0.000812,
+  "categorical__route_Route 2": 0.00016,
+  "categorical__weather_Sunny": 0.000156,
+  "numeric__temperature": 0.00014,
+  "numeric__weekend": 0.00014,
+  "numeric__humidity": 0.000127,
+  "numeric__day_of_week": 9.1e-05,
+  "categorical__route_Route 5": 7.3e-05,
+  "categorical__route_Route 4": 7.1e-05,
+  "numeric__day": 6e-05,
+  "categorical__weather_Cloudy": 4.8e-05,
+  "categorical__weather_Rainy": 4.4e-05,
+  "numeric__month": 1.6e-05,
+  "categorical__route_Route 1": 1.5e-05,
+  "numeric__holiday": 1.1e-05
+}

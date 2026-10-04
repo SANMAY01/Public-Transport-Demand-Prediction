@@ -1,0 +1,9 @@
+import { Link } from "react-router-dom";
+import { BarChart3, Brain, Bus, ShieldCheck } from "lucide-react";
+export default function Landing() {
+ return <div className="min-h-screen bg-slate-950 text-white">
+  <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"><div className="flex items-center gap-2 text-xl font-bold"><Bus/> TransitPredict</div><Link to="/login" className="rounded-lg bg-white px-4 py-2 font-semibold text-slate-900">Login</Link></nav>
+  <section className="mx-auto max-w-6xl px-6 pb-20 pt-20 text-center"><div className="mx-auto max-w-3xl"><p className="mb-4 font-semibold text-blue-300">PUBLIC TRANSPORT ANALYTICS</p><h1 className="text-5xl font-extrabold tracking-tight md:text-6xl">Predict passenger demand with data-driven intelligence.</h1><p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">Analyze routes, weather and time patterns to make smarter public transport planning decisions.</p><div className="mt-8 flex justify-center gap-3"><Link to="/register" className="rounded-lg bg-blue-600 px-5 py-3 font-semibold">Get Started</Link><Link to="/login" className="rounded-lg border border-slate-700 px-5 py-3 font-semibold">Sign In</Link></div></div>
+  <div className="mt-16 grid gap-5 md:grid-cols-3">{[[Brain,"ML Prediction","Gradient Boosting, Random Forest and Linear Regression."],[BarChart3,"Analytics","Explore demand patterns by route, hour and weather."],[ShieldCheck,"Secure Access","JWT authentication with separate user and admin capabilities."]].map(([I,t,d])=><div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 text-left" key={t}><I className="mb-4 text-blue-400"/><h3 className="font-bold text-lg">{t}</h3><p className="mt-2 text-sm text-slate-400">{d}</p></div>)}</div></section>
+ </div>
+}

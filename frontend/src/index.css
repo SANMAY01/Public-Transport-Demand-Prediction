@@ -1,0 +1,421 @@
+@import "tailwindcss";
+
+/* =========================================================
+   TRANSITPREDICT
+   GLOBAL APPLICATION THEME
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  zoom: 1;
+}
+
+body {
+  min-height: 100vh;
+  background: #080f1d;
+  color: #e2e8f0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* =========================================================
+   GLOBAL DARK WORKSPACE
+   ========================================================= */
+
+.app-dark {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background: #080f1d !important;
+  color: #e2e8f0 !important;
+}
+
+/* =========================================================
+   ALL MAIN WHITE CARDS
+   ========================================================= */
+
+.app-dark .bg-white {
+  background: #111827 !important;
+  color: #e2e8f0 !important;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.app-dark .card {
+  background: #0f172a !important;
+  border: 1px solid #263449 !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+.app-dark h1,
+.app-dark h2,
+.app-dark h3,
+.app-dark h4,
+.app-dark h5 {
+  color: #f8fafc !important;
+}
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.app-dark .text-slate-950,
+.app-dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+.app-dark .text-slate-800 {
+  color: #e2e8f0 !important;
+}
+
+.app-dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.app-dark .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+.app-dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.app-dark .text-slate-400 {
+  color: #64748b !important;
+}
+
+/* =========================================================
+   BACKGROUND UTILITIES
+   ========================================================= */
+
+.app-dark .bg-slate-50 {
+  background: #172033 !important;
+}
+
+.app-dark .bg-slate-100 {
+  background: #1e293b !important;
+}
+
+.app-dark .bg-slate-200 {
+  background: #334155 !important;
+}
+
+/* =========================================================
+   BORDERS
+   ========================================================= */
+
+.app-dark .border,
+.app-dark .border-slate-100,
+.app-dark .border-slate-200 {
+  border-color: #263449 !important;
+}
+
+.app-dark .border-slate-300 {
+  border-color: #334155 !important;
+}
+
+.app-dark .border-t,
+.app-dark .border-b,
+.app-dark .border-l,
+.app-dark .border-r,
+.app-dark .border-y {
+  border-color: #263449 !important;
+}
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.app-dark table {
+  width: 100%;
+  color: #e2e8f0;
+}
+
+.app-dark thead {
+  background: #172033 !important;
+}
+
+.app-dark th {
+  color: #cbd5e1 !important;
+  background: #172033 !important;
+}
+
+.app-dark td {
+  color: #cbd5e1 !important;
+}
+
+.app-dark tbody tr {
+  border-color: #263449 !important;
+  background: #111827;
+}
+
+.app-dark tbody tr:hover {
+  background: #172033 !important;
+}
+
+/* =========================================================
+   FORM INPUTS
+   ========================================================= */
+
+.app-dark input,
+.app-dark select,
+.app-dark textarea {
+  background: #111827 !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+.app-dark input::placeholder,
+.app-dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+.app-dark input:focus,
+.app-dark select:focus,
+.app-dark textarea:focus {
+  border-color: #3b82f6 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* =========================================================
+   BLUE ACCENTS
+   ========================================================= */
+
+.app-dark .bg-blue-50 {
+  background: rgba(37, 99, 235, 0.12) !important;
+}
+
+.app-dark .bg-cyan-50 {
+  background: rgba(6, 182, 212, 0.12) !important;
+}
+
+.app-dark .bg-violet-50 {
+  background: rgba(139, 92, 246, 0.12) !important;
+}
+
+.app-dark .bg-purple-50 {
+  background: rgba(168, 85, 247, 0.12) !important;
+}
+
+.app-dark .bg-emerald-50 {
+  background: rgba(16, 185, 129, 0.12) !important;
+}
+
+.app-dark .bg-green-50 {
+  background: rgba(34, 197, 94, 0.12) !important;
+}
+
+.app-dark .bg-red-50 {
+  background: rgba(239, 68, 68, 0.10) !important;
+}
+
+/* =========================================================
+   ACCENT TEXT
+   ========================================================= */
+
+.app-dark .text-blue-600,
+.app-dark .text-blue-700 {
+  color: #60a5fa !important;
+}
+
+.app-dark .text-cyan-600 {
+  color: #22d3ee !important;
+}
+
+.app-dark .text-violet-600 {
+  color: #a78bfa !important;
+}
+
+.app-dark .text-purple-600 {
+  color: #c084fc !important;
+}
+
+.app-dark .text-emerald-600 {
+  color: #34d399 !important;
+}
+
+.app-dark .text-green-600 {
+  color: #4ade80 !important;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.app-dark aside nav a {
+  color: #94a3b8;
+}
+
+.app-dark aside nav a:hover {
+  background: #172033 !important;
+  color: #f8fafc !important;
+}
+
+/* Active link */
+.app-dark aside nav a[aria-current="page"] {
+  background: linear-gradient(
+    90deg,
+    rgba(37, 99, 235, 0.18),
+    rgba(79, 70, 229, 0.08)
+  ) !important;
+
+  color: #60a5fa !important;
+
+  border-color: rgba(59, 130, 246, 0.25) !important;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.app-dark button.border,
+.app-dark button.bg-white {
+  background: #111827 !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+.app-dark button.border:hover,
+.app-dark button.bg-white:hover {
+  background: #172033 !important;
+  border-color: #3b82f6 !important;
+  color: #f8fafc !important;
+}
+
+/* Blue primary buttons stay blue */
+.app-dark .bg-blue-600 {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+.app-dark .bg-blue-600:hover {
+  background: #3b82f6 !important;
+}
+
+/* =========================================================
+   CHARTS
+   ========================================================= */
+
+.app-dark .recharts-cartesian-grid line {
+  stroke: #263449 !important;
+}
+
+.app-dark .recharts-text {
+  fill: #94a3b8 !important;
+}
+
+.app-dark .recharts-cartesian-axis-line {
+  stroke: #334155 !important;
+}
+
+.app-dark .recharts-cartesian-axis-tick-line {
+  stroke: #334155 !important;
+}
+
+/* =========================================================
+   CHART TOOLTIP
+   ========================================================= */
+
+.app-dark .recharts-default-tooltip {
+  background: #111827 !important;
+  border: 1px solid #334155 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+.app-dark .recharts-tooltip-label {
+  color: #f8fafc !important;
+}
+
+/* =========================================================
+   SHADOWS
+   ========================================================= */
+
+.app-dark .shadow-sm,
+.app-dark .shadow-md,
+.app-dark .shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22) !important;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.app-dark a {
+  transition: all 0.2s ease;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080f1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: white;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .app-dark {
+    overflow-x: hidden;
+  }
+
+  .app-dark .card {
+    border-radius: 14px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "best_model": "Gradient Boosting",
+  "metrics": {
+    "Linear Regression": {
+      "MAE": 4.065,
+      "RMSE": 5.4158,
+      "R2": 0.9913
+    },
+    "Random Forest": {
+      "MAE": 3.8504,
+      "RMSE": 5.058,
+      "R2": 0.9924
+    },
+    "Gradient Boosting": {
+      "MAE": 3.6298,
+      "RMSE": 4.7682,
+      "R2": 0.9932
+    }
+  },
+  "dataset_records": 6000
+}
